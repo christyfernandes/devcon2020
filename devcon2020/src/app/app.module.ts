@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeacherDashboardModule } from './teacher-dashboard/teacher-dashboard.module';
 import { LayoutModule } from './layout/layout.module';
+import { TimeTableComponent } from './time-table/time-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimeTableComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { LayoutModule } from './layout/layout.module';
     TeacherDashboardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
