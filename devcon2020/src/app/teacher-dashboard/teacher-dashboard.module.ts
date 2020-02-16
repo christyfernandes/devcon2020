@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { TeacherModuleComponent } from './teacher-module/teacher-module.component';
 import { Routes, RouterModule } from '@angular/router';
 import { StaffListComponent } from './staff-list/staff-list.component';
+import { TeacherSideMenuComponent } from './teacher-side-menu/teacher-side-menu.component';
+import { LayoutModule } from '../layout/layout.module';
 
 export const routes: Routes = [
   {
@@ -23,10 +25,11 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [TeacherModuleComponent, StaffListComponent],
+  declarations: [TeacherModuleComponent, StaffListComponent, TeacherSideMenuComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    LayoutModule
   ],
 })
 export class TeacherDashboardModule { }

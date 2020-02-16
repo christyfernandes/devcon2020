@@ -1,0 +1,27 @@
+::ng-deep .grid-item {
+    border: 0.0625rem solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border-radius: 0.125rem;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    grid-column: auto;
+    grid-row: auto;
+    &:last-of-type{
+      margin-bottom:1rem;
+    }
+    &--selected {
+      border-image: linear-gradient(to right, red, purple);
+      border-image-slice: 1;
+      border-width: 2px;
+    }
+    .section-in-area {
+      h4 {
+        padding: 0.75rem 1rem;
+        font-size: 1.25rem;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .content {
+        padding: 0.75rem 1rem;
+      }
+    }
+  }
