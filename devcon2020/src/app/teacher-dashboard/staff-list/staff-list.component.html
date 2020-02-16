@@ -1,11 +1,38 @@
+<nav class="hamburger-menu" role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <li><a [routerLink]="['/teacher/dashboard']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" title="Class Room" tabindex="0">Class Room</a></li>
+        <li><a [routerLink]="['/teacher/staff-list']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" title="Staff Room" tabindex="0">Staff Room</a></li>
+      </ul>
+    </div>
+</nav>
+
 <div class="staff-list">
     <section class="header">
         <div class="brand">
             <img src="../../../assets/images/logo.jpg" alt="" title="" width="180" />
         </div>
+        <div class="page-title">Staff Room</div>
     </section>
-
-    <div class="staff-grid">
+    <div class="staff-grid scroll">
         <section class="staff-grid-item"  [ngClass]="{'selected': teacher.selected}" *ngFor="let teacher of teacherList" (click)="toogleSelected(teacher)" #item>
             <div class="section-in-area">
                 <div class="img-container">

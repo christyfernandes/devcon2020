@@ -10,62 +10,62 @@ export class StaffListComponent implements OnInit {
   public  teacherList = [
     {
       name: 'Jo Ann Fernandes',
-      subjects: ['class 10', 'class 6'],
-      image: 'https://pngdrive.com/wp-content/uploads/edd/2019/08/pngdrive-1000x1000-Teacher-27.jpg',
+      subjects: ['class 3', 'EVS', 'class 4', 'Social Studies'],
+      image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
       name: 'Kate Winslet',
       subjects: ['class 10', 'class 6'],
-      image: 'https://images.iphonephotographyschool.com/24755/portrait-photography.jpg',
+      image: 'https://images.pexels.com/photos/308249/pexels-photo-308249.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
       name: 'Celine Dion',
-      subjects: ['class 10', 'class 6'],
-      image: 'https://i.pinimg.com/originals/9e/c4/a7/9ec4a7d81442d0183cf332ce959dc310.jpg',
+      subjects: ['class 10', 'Socail', 'class 8', 'English'],
+      image: 'https://images.pexels.com/photos/247917/pexels-photo-247917.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
       name: 'Taylor Swift',
       subjects: ['class 10', 'class 6'],
       image: 'https://g2.ravendev.lt/wp-content/uploads/2019/05/100-Beautiful-girls-wallpapers-55-2.jpg',
-      selected: true
+      selected: false
     },
     {
       name: 'Angelina Julie',
-      subjects: ['class 10', 'class 6'],
-      image: 'https://kelicommheadshots.com/wp-content/uploads/2019/02/Jen-for-Social-Media-2.jpg',
+      subjects: ['Maths', 'class 6', 'Science'],
+      image: 'https://images.pexels.com/photos/449734/pexels-photo-449734.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
       name: 'Asha Kiran ',
       subjects: ['class 10', 'class 6'],
-      image: 'https://odishatv.in/wp-content/uploads/2017/08/teachers.png',
+      image: 'https://images.pexels.com/photos/458718/pexels-photo-458718.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
       name: 'Emma Watson',
-      subjects: ['class 10', 'class 6', 'class 8'],
-      image: '',
+      subjects: ['Maths', 'class 6', 'Science'],
+      image: 'https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
-      name: 'Jo Ann Fernandes',
-      subjects: ['class 10', 'class 6', 'class 8', 'class 9'],
-      image: 'https://g2.ravendev.lt/wp-content/uploads/2019/05/100-Beautiful-girls-wallpapers-55-2.jpg',
+      name: 'Arden Dean',
+      subjects: ['class 10', 'Socail', 'class 8', 'English'],
+      image: 'https://images.pexels.com/photos/604146/pexels-photo-604146.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
-      name: 'Emma Watson',
+      name: 'Angelina Winn',
       subjects: ['class 10', 'class 6', 'class 8'],
-      image: 'https://images.iphonephotographyschool.com/24755/portrait-photography.jpg',
+      image: 'https://images.pexels.com/photos/672445/pexels-photo-672445.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     },
     {
-      name: 'Emma Watson',
-      subjects: ['class 10', 'class 6', 'class 8'],
-      image: 'https://i.pinimg.com/originals/9e/c4/a7/9ec4a7d81442d0183cf332ce959dc310.jpg',
+      name: 'Oscar Thomsen',
+      subjects: ['Maths', 'class 6', 'Science'],
+      image: 'https://images.pexels.com/photos/274595/pexels-photo-274595.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
     }
 
