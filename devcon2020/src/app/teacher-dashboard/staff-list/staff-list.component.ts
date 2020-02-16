@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import {SLIDE_UP_DOWN, FLYIN, APPEAR_DOWN, CARD_ANIMATION} from '../../app-animations';
 
 @Component({
   selector: 'app-staff-list',
   templateUrl: './staff-list.component.html',
-  styleUrls: ['./staff-list.component.scss']
+  styleUrls: ['./staff-list.component.scss'],
+  animations: [
+    SLIDE_UP_DOWN, FLYIN, APPEAR_DOWN, CARD_ANIMATION
+  ]
 })
 export class StaffListComponent implements OnInit {
   public defaultProfileImg = './assets/images/default-profile.png';
