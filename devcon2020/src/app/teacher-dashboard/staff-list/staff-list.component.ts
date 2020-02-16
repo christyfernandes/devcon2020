@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./staff-list.component.scss']
 })
 export class StaffListComponent implements OnInit {
-  public defaultProfileImg = './assets/images/pngfind.com-person-icon-png-532960.png';
+  public defaultProfileImg = './assets/images/default-profile.png';
   public  teacherList = [
     {
       name: 'Jo Ann Fernandes',
