@@ -1,36 +1,54 @@
 <nav class="hamburger-menu" role="navigation">
-        <div id="menuToggle">
-          <!--
+  <div id="menuToggle">
+    <!--
           A fake / hidden checkbox is used as click reciever,
           so you can use the :checked selector on it.
           -->
-          <input type="checkbox" />
-          <!--
+    <input type="checkbox" />
+    <!--
           Some spans to act as a hamburger.
           
           They are acting like a real hamburger,
           not that McDonalds stuff.
           -->
-          <span></span>
-          <span></span>
-          <span></span>
-          <!--
+    <span></span>
+    <span></span>
+    <span></span>
+    <!--
           Too bad the menu has to be inside of the button
           but hey, it's pure CSS magic.
           -->
-          <ul id="menu">
-            <a href="#" class="active" title="Class Room" tabindex="0">Class Room</a>
-            <a href="#" title="Staff Room" tabindex="0"><li>Staff Room</li></a>
-          </ul>
-        </div>
-      </nav>
-
+    <ul id="menu">
+      <li>
+        <a
+          [routerLink]="['/teacher/dashboard']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          title="Class Room"
+          tabindex="0"
+          >Class Room</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['/teacher/staff-list']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          title="Staff Room"
+          tabindex="0"
+          >Staff Room</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <div class="st-dashboard">
   <section class="header">
     <div class="brand">
       <img src="../../../assets/images/logo.jpg" alt="" title="" width="180" />
     </div>
+    <div class="page-title">Class Room</div>
     <!-- <div class="nav">
       <ul>
         <li>
@@ -40,59 +58,71 @@
       </ul>
     </div> -->
   </section>
-  <div class="dashboard-grid">
+  <div class="dashboard-grid scroll">
     <section class="grid-item attendence">
       <div class="section-in-area">
         <h4>Attendence</h4>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
-            corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed,
-            exercitationem sequi dolore culpa incidunt accusamus, quasi unde
-            reprehenderit ea molestias.</div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
+          corporis quaerat voluptatum eos tempora temporibus nisi voluptates
+          sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde
+          reprehenderit ea molestias.
+        </div>
       </div>
     </section>
     <section class="grid-item empty">
       <div class="section-in-area">
         <h4>Empty</h4>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
-            corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed,
-            exercitationem sequi dolore culpa incidunt accusamus, quasi unde
-            reprehenderit ea molestias.</div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
+          corporis quaerat voluptatum eos tempora temporibus nisi voluptates
+          sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde
+          reprehenderit ea molestias.
+        </div>
       </div>
     </section>
     <section class="grid-item grid-item--selected leaderboard">
       <div class="section-in-area">
         <h4>Leaderboard</h4>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
-            corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed,
-            exercitationem sequi dolore culpa incidunt accusamus, quasi unde
-            reprehenderit ea molestias.</div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
+          corporis quaerat voluptatum eos tempora temporibus nisi voluptates
+          sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde
+          reprehenderit ea molestias.
+        </div>
       </div>
     </section>
     <section class="grid-item assessment">
       <div class="section-in-area">
         <h4>Time Table</h4>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
-            corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed,
-            exercitationem sequi dolore culpa incidunt accusamus, quasi unde
-            reprehenderit ea molestias.</div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
+          corporis quaerat voluptatum eos tempora temporibus nisi voluptates
+          sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde
+          reprehenderit ea molestias.
+        </div>
       </div>
     </section>
     <section class="grid-item timetable">
       <div class="section-in-area">
         <h4>Assessment</h4>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
-            corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed,
-            exercitationem sequi dolore culpa incidunt accusamus, quasi unde
-            reprehenderit ea molestias.</div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
+          corporis quaerat voluptatum eos tempora temporibus nisi voluptates
+          sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde
+          reprehenderit ea molestias.
+        </div>
       </div>
     </section>
     <section class="grid-item upcoming">
       <div class="section-in-area">
         <h4>Next Class</h4>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
-            corporis quaerat voluptatum eos tempora temporibus nisi voluptates sed,
-            exercitationem sequi dolore culpa incidunt accusamus, quasi unde
-            reprehenderit ea molestias.</div>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur
+          corporis quaerat voluptatum eos tempora temporibus nisi voluptates
+          sed, exercitationem sequi dolore culpa incidunt accusamus, quasi unde
+          reprehenderit ea molestias.
+        </div>
       </div>
     </section>
   </div>
