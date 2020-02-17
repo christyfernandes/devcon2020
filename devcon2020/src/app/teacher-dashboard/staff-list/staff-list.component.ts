@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SLIDE_UP_DOWN, FLYIN, APPEAR_DOWN, CARD_ANIMATION} from '../../app-animations';
+import { ThemeService } from 'src/app/theme/theme.service';
 
 @Component({
   selector: 'app-staff-list',
@@ -71,12 +72,16 @@ export class StaffListComponent implements OnInit {
       subjects: ['Maths', 'class 6', 'Science'],
       image: 'https://images.pexels.com/photos/274595/pexels-photo-274595.jpeg?h=350&auto=compress&cs=tinysrgb',
       selected: false
+    },
+    {
+      name: 'Oscar Thomsen',
+      subjects: ['Maths', 'class 6', 'Science'],
+      image: '',
+      selected: false
     }
-
-    
   ];
 
-  constructor() { }
+  constructor(public themeService: ThemeService) { }
 
   ngOnInit() {
   }
@@ -86,6 +91,16 @@ export class StaffListComponent implements OnInit {
       t.selected = false;
     });
     teacher.selected = !teacher.selected;
+  }
+
+  toggleTheme() {
+    if (this.themeService.isDarkTheme()) {
+      this.themeService.setLightTheme();
+    } else {
+      this.themeService.setDarkTheme();
+    }
+
+    // this.setLightbulb();
   }
 
 }

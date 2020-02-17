@@ -42,10 +42,10 @@
     --gray-400: hsl(var(--gray-hs), 40%); // sub heading #666666
     --gray-800: var(--gray); // text color #333333
   
-    --primary-color: var(--blue);
-    --secondary-color: var(--yellow);
-    --tertiary-color: var(--orange);
+    --devcon-primary-color: #010035;
+    --devcon-secondary-color: #f6c648;
+    --devcon-tertiary-color: #e55a28;
 
-    --base-font-size: 0.875rem;
-    --base-block-space: 0.5rem; //8px,
+    --devcon-base-font-size: 0.875rem;
+    --devcon-base-block-space: 0.5rem; //8px,
   }
