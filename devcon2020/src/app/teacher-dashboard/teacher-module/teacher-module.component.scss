@@ -18,7 +18,7 @@
   justify-items: stretch;
   -webkit-box-align: stretch;
   align-items: stretch;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 6.5rem);
   padding: 1rem 2rem 2rem;
 }
 
@@ -32,9 +32,6 @@
   grid-column: auto;
   grid-row: auto;
 
-  &:last-of-type {
-    margin-bottom: 1rem;
-  }
 
   &--selected {
     border-image: linear-gradient(to right, red, purple);
@@ -48,6 +45,7 @@
     background: #fff;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 0.5rem;
+    height:100%;
 
     .grid-content {
       display: flex;
@@ -229,7 +227,8 @@
 @include respond-above(md) {
   .dashboard-grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    // grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 150px 200px auto auto;
   }
 
   .grid-item {
@@ -239,7 +238,7 @@
   }
 
   .attendence {
-    grid-column: 1 / span 2;
+    grid-column: 2 / span 2;
     grid-row: 1 / span 2;
   }
 
@@ -247,17 +246,17 @@
 
   .leaderboard {
     grid-column: 4;
-    grid-row: 1 / span 3;
+    grid-row: 2/span 3;
   }
 
   .assessment {
-    grid-column: 3;
-    grid-row: 2 / span 3;
+    grid-column: 2/span 2;
+    grid-row: 3/span 2;
   }
 
   .timetable {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
+    // grid-column: 1 / span 2;
+    grid-row: 2/span 3;
   }
 }
 
