@@ -120,4 +120,16 @@
       }
     }
   }
+
+  .background{
+    background-color: var(--devcon-primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .foreground{
+    background-color: var(--devcon-primary-color);
+    color: var( --devcon-secondary-color);
+    height: 100px;
+  }
 }

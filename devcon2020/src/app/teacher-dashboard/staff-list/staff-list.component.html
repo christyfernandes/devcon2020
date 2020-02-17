@@ -32,5 +32,19 @@
                 </div>
             </app-dashboard-panel>
         </div>
+        <button (click)="toggleTheme()">
+            {{themeService.getActiveTheme().name}}
+        </button>
+        <div class="background">
+            <div class="foreground">
+                A
+            </div>
+            <div class="foreground">
+                B
+            </div>
+            <div class="foreground">
+                C
+            </div>
+        </div>
     </div>
 </div>
